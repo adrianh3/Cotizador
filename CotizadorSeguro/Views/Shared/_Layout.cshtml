@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador de Seguros AARCO</title>
+    <link rel="shortcut icon" href="https://www.anuarioseguros.lat/admin/storage/images/ANUARIO2016-logo-AARCO.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/75e35f0bf3.js" crossorigin="anonymous"></script>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <h1 style="color: #BABABA; ">COTIZA EL SEGURO DE TU AUTO  <i class="fas fa-car"></i> </h1>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+
+<footer class="text-center text-lg-start" style=" padding-top:1%; margin-top:3%; background-image: url(http://www.gabinetedecobranza.com/images/footer-bg.jpg) ">
+
+    <div class="text-center text-white" style="background-color: rgba(0, 0, 0, 0.2);">
+        <h4> Somos la mejor opción para ti en el mercado de seguros y fianzas</h4>
+    </div>
+
+    <div class="container d-flex justify-content-center py-5">
+
+        <a href="https://es-la.facebook.com/AARCOAgente/" class="btn btn-primary btn-lg btn-floating mx-2">Facebook  <i class="fab fa-facebook-f"></i> </a>
+        <a href="https://www.youtube.com/channel/UCOrv9JXWovRelu4JwfUm9Qg" class="btn btn-danger btn-lg btn-floating mx-2">Youtube  <i class="fab fa-youtube"></i> </a>
+        <a href="https://www.instagram.com/aarcoagentes/?hl=es" class="btn btn-warning btn-lg btn-floating mx-2">Instagram  <i class="fab fa-instagram"></i> </a>
+        <a href="https://twitter.com/aarcoagente?lang=es" class="btn btn-info btn-lg btn-floating mx-2">Twitter  <i class="fab fa-twitter"></i> </a>
+    </div>
+
+    <div class="text-center text-white" style="background-color: rgba(0, 0, 0, 0.2);">
+        <p>AARCO, Agente de Seguros y de Fianzas, S.A. de C.V. 2022</p>
+    </div>
+
+    <div class="text-center text-white" style="background-color: rgba(0, 0, 0, 0.2);">
+        <a class="text-white" href="https://www.aarco.com.mx/">AARCO.COM</a>
+    </div>
+</footer>
+<p style="background-color:black; color:white; margin-bottom:-2%">Jesus Adrian Trejo Perez</p>
+</html>

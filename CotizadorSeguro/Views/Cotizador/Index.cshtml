@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+<script src="../../Scripts/Cotizador/Cotizador.js"></script>
+
+<div class="container" style="justify-content: center; display: flex; margin-top: 3%;">
+    <img style="text-align:center;" src="https://www.aarco.com.mx/wp-content/uploads/2019/02/Logo-Aarco.png">
+</div>
+
+<div class="container" style="justify-content:center; display:flex;">
+
+    <form style="margin:1%; padding: 1%; border: 1px solid;">
+        <div class="form-group">
+            <h2>Datos de tu Vehículo</h2>
+        </div>
+        <div class="form-group">
+            <label for="selectMarca">Selecciona la Marca de tu Vehículo</label>
+            <select class="form-control" id="selectMarca">
+                <option value="0" disabled selected>Seleccionar</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="selectSubMarca">Selecciona la Submarca de tu Vehículo</label>
+            <select class="form-control" id="selectSubMarca">
+                <option value="0" disabled selected>Seleccionar</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="selectModelo">Selecciona el Modelo de tu Vehículo</label>
+            <select class="form-control" id="selectModelo">
+                <option value="0" disabled selected>Seleccionar</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="selectVersion">Selecciona la Versión de tu Vehículo</label>
+            <select class="form-control" id="selectVersion">
+                <option value="0" disabled selected>Seleccionar</option>
+            </select>
+        </div>
+    </form>
+
+    <form id="formVivienda" style="margin:1%; padding: 1%; border: 1px solid;">
+        <div class="form-group">
+            <h2>Datos de tu Ubicación</h2>
+        </div>
+        <div class="form-group">
+            <label for="inputCP">Escribe tu codigo postal</label>
+            <input required maxlength="5" id="inputCP" class="form-control form-control-sm" type="text" placeholder="Codigo Postal....">
+        </div>
+
+        <div class="form-group">
+            <label for="inputEstado">Estado</label>
+            <input required disabled id="inputEstado" class="form-control form-control-sm" type="text" placeholder="Estado....">
+        </div>
+
+        <div class="form-group">
+            <label for="inputMunicipio">Municipio</label>
+            <input required disabled id="inputMunicipio" class="form-control form-control-sm" type="text" placeholder="Municipio....">
+        </div>
+
+        <div class="form-group">
+            <label for="selectColonia">Selecciona tu Colonia</label>
+            <select class="form-control" id="selectColonia">
+                <option value="0" disabled selected>Seleccionar</option>
+            </select>
+        </div>
+    </form>
+
+</div>
+
+
+<div class="container" style="justify-content:center; display:flex;">
+    <button style="width:60%" id="buttonCotizar" type="button" class="btn btn-primary">Cotizar</button>
+</div>
+
+<div class="container" style="justify-content:center; display:flex;">
+    <h5 id="divLoader" style="display:none;"> Cargando.....</h5>
+</div>
+
+<div class="container" style="justify-content:center; display:flex;">
+    <h5> Cotizaciones por Aseguradora </h5>
+</div>
+
+<div class="container" style="justify-content:center; display:flex;">
+    <table style="max-width:60%" id="tableCostos" class="table">
+        <thead>
+            <tr> </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+
+
+
